@@ -1,0 +1,18 @@
+@import '../scss/colors';
+
+.toolbar {
+    background: $primary-color-blue;
+    height: 0px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    .toolbarTitle {
+      font-size: 20px;
+      font-weight: 550;
+      color: $primary-color-white
+    }
+   
+  }
+

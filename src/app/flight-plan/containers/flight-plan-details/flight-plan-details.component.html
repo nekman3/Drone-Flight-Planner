@@ -1,0 +1,19 @@
+<div class="flightPlanDetails">
+  <mat-list>
+      <mat-list-item *ngFor="let plan of flightPlanList" [id]="plan.id" class="flightPlan" 
+        [ngClass]="{'active': plan.id === selectedId }" (click)="selectFlightPlan(plan.id)">
+          <p matLine class="planId"> {{ 'GENERAL.PLAN' | translate}}: {{plan.id}}</p>
+          <p matLine class="planPoints"> {{ 'GENERAL.POINTS' | translate}}: {{plan.coordinates.length}}</p>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  <div class="buttons">
+    <button class="create" (click)="createFlightPlan()"mat-button>
+      {{ 'GENERAL.BUTTON.CREATE' | translate}}
+    </button>
+    <button class="save" (click)="saveFlightPlan()"  [disabled]="!planFlightPoints || planFlightPoints === 1 || isPlanSaved"  mat-button>
+      {{ 'GENERAL.BUTTON.SAVE' | translate}}
+    </button>
+  </div>
+</div>
+

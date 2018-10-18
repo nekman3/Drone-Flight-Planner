@@ -1,0 +1,12 @@
+{
+    "GENERAL": {
+        "DRONE_FLIGHT_PLANNER": "Drone Flight Planner",
+        "PLAN": "Plan",
+        "POINTS": "Points",
+        "BUTTON": {
+            "CREATE": "Create",
+            "SAVE": "Save"
+        }
+    }
+   
+}

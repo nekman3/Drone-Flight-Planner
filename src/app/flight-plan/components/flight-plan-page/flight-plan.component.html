@@ -1,0 +1,3 @@
+<app-flight-plan-details (selectedPlanFlight)="setSelectedPlanFlight($event)" [planFlightPoints]="selectedFlightPlanPoints"></app-flight-plan-details>
+<app-flight-plan-map [flightPlan]="selectedPlanFlight" (flightPlanPoints)="setFlightPlanPoints($event)"></app-flight-plan-map>
+

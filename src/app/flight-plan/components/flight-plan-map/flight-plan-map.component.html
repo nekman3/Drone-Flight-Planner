@@ -1,0 +1,9 @@
+<div class="flighPlanMap">
+  <agm-map id="agm_map" [latitude]="lat" [longitude]="lng" (mapClick)="chooseMapLocation($event)" [zoom]="defaultZoom">
+    <agm-marker *ngFor="let coordinate of flightPlan.coordinates" [latitude]="coordinate.lat" [longitude]="coordinate.lng"></agm-marker>
+    <agm-polyline>
+        <agm-polyline-point *ngFor="let coordinate of flightPlan.coordinates" [latitude]="coordinate.lat" [longitude]="coordinate.lng">
+        </agm-polyline-point>
+      </agm-polyline>
+  </agm-map>
+</div>
